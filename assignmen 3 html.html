@@ -1,0 +1,59 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Covid Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="assignmen 3 css.css" />
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  </head>
+  <body>
+    <div id="particles-js"></div>
+      <div class="container">
+        <h1>Covid 19 Tracker</h1>
+        <p style="text-align: center; font-size: large; font-style: unset; color: rgb(136, 255, 0);">COVID-19 TRACKER</p>
+          <form >
+            <input type="text" id="formnegara" class="formnegara" name="formnegara" placeholder="Enter Your Country">
+            <button class="btn btn-outline-primary resume" type="submit" onclick="processData()">Get Data</button>
+          <div class="board">
+            <div class="card a">
+              <i class="material-icons">add</i>
+              <h5>Active Cases</h5>
+              <span id="kasus-aktif">0</span>
+            </div>
+            <div class="card b">
+              <i class="material-icons">playlist_add</i>
+              <h5>New Cases</h5>
+              <span id="kasus-baru">0</span>
+            </div>
+            <div class="card c">
+              <i class="material-icons">verified_user</i>
+              <h5>Recovered Cases</h5>
+              <span id="kasus-sembuh">0</span>
+            </div>
+            <div class="card d">
+              <i class="material-icons">visibility</i>
+              <h5>Total tests</h5>
+              <span id="total-kasus">0</span>
+            </div>
+            <div class="card e">
+              <i class="material-icons">receipt</i>
+              <h5>Total Death</h5>
+              <span id="total-mati">0</span>
+            </div>
+            <div class="card f">
+              <i class="material-icons">insert_chart</i>
+              <h5>Total Cases</h5>
+              <span id="total-test">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script src="assignmen 3 js.js"></script>
+  </body>
+</html>
